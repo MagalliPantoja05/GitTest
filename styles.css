@@ -1,24 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #00274C; 
-    color: #FFFFFF;
+    background-color: #e1c699; 
+    color: #f5f5dc;
 }
 
 /* Encabezado */
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    background-color: #a9957b;
+    color: #f5f5dc;
+    text-align: left;
+    padding: 15px;
 }
 
 header img {
     width: 30%;
-    margin-bottom: 20px;
-}
-
-.section-gif {
-    text-align: center;
 }
 
 h1 {
@@ -31,7 +33,7 @@ h2 {
 
 /* Secciones */
 section {
-    margin-bottom: 30px;
+    margin: 20px;
 }
 
 /* Listas */
@@ -46,24 +48,78 @@ li {
 
 /* Enlaces */
 a {
-    color: #FFFFFF;
+    color: #f5f5dc;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #8c6B4A;
 }
 
 /* Personalización */
 .destacado {
-    color: #F2A900;
+    color: #8c6B4A;
     font-weight: bold;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #a9957b;
+    color: #f5f5dc;
     text-align: center;
     bottom: 0;
     width: 100%;
+}
+
+/* Estilos tarjetas */
+
+.card{
+    background-color: #a9957b;
+    color: #f5f5dc;
+    width: 35rem;
+    padding: 2rem 2rem;
+    margin: 2.5rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.card-image-container{
+    width: 50%;
+}
+
+.card-image-container img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.card-info{
+    margin: 1rem 0;
+}
+
+.card-info h1{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.card-info p{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.card button{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 100vw;
+    padding: 0.5rem 1rem;
+    transition: 200ms;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.card button:hover{
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: #8c6B4A;
 }
