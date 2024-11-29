@@ -4,17 +4,16 @@
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
+    color: #f5f5dc;
 }
 
 body {
-    background-color: #e1c699; 
-    color: #f5f5dc;
+    background-color: #e1c699;   
 }
 
 /* Encabezado */
 header {
     background-color: #a9957b;
-    color: #f5f5dc;
     text-align: left;
     padding: 15px;
 }
@@ -51,9 +50,6 @@ li {
 }
 
 /* Enlaces */
-a {
-    color: #f5f5dc;
-}
 
 a:hover {
     text-decoration: underline;
@@ -68,7 +64,6 @@ a:hover {
 
 footer {
     background-color: #a9957b;
-    color: #f5f5dc;
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -78,7 +73,6 @@ footer {
 
 .card{
     background-color: #a9957b;
-    color: #f5f5dc;
     width: 35rem;
     padding: 2rem 2rem;
     margin: 2.5rem;
@@ -114,7 +108,6 @@ footer {
 .card button{
     border: 1px solid white;
     background-color: black;
-    color: white;
     border-radius: 100vw;
     padding: 0.5rem 1rem;
     transition: 200ms;
