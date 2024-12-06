@@ -13,14 +13,37 @@ body {
 
 /* Encabezado */
 header {
+    display: flex;
     background-color: #a9957b;
     text-align: left;
-    padding: 15px;
+    padding: 1rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img {
     width: 30%;
+    background-color: white;
+    border-radius: 10%;
+    border: 1px solid #F2A900;
 }
+
+header ul{
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+header ul li{
+    transition: 200ms;
+    font-style: italic;
+}
+
+header ul li:hover{
+    transform: scale(1.2);
+}
+
+/*titulos*/
 
 h1 {
     font-size: 28px;
@@ -62,23 +85,26 @@ a:hover {
     font-weight: bold;
 }
 
-footer {
-    background-color: #a9957b;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-}
 
 /* Estilos tarjetas */
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 
 .card{
+    flex-direction: column;
+    align-items: center;
     background-color: #a9957b;
     width: 35rem;
+    height: 35rem;
     padding: 2rem 2rem;
     margin: 2.5rem;
     border-radius: 10px;
     box-sizing: border-box;
-    display: inline-block;
 }
 
 .card-image-container{
@@ -86,12 +112,12 @@ footer {
 }
 
 .card-image-container img{
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
 }
 
 .card-info{
-    margin: 1rem 0;
+    width: 80%;
 }
 
 .card-info h1{
@@ -102,10 +128,11 @@ footer {
 .card-info p{
     font-size: 20px;
     font-weight: 200;
-    text-align: center;
+    text-align: justify;
 }
 
 .card button{
+    width: 8rem;
     border: 1px solid white;
     background-color: black;
     border-radius: 100vw;
@@ -113,6 +140,7 @@ footer {
     transition: 200ms;
     font-style: italic;
     font-weight: 500;
+    align-self: flex-end;
 }
 
 .card button:hover{
@@ -120,3 +148,28 @@ footer {
     background-color: #8c6B4A;
 }
 
+/*Pie de página*/
+footer {
+    background-color: #a9957b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+.links-containers{
+    display: flex;
+    font-weight: bold;
+    gap: 3.5rem;
+}
+
+.links-containers li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logos-container{
+    display: flex;
+    gap: 3.5rem;
+}
