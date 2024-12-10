@@ -13,12 +13,15 @@ body {
 
 /* Encabezado */
 header {
-    display: flex;
     background-color: #a9957b;
     text-align: left;
     padding: 1rem 2.5rem;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
 }
 
 header img {
