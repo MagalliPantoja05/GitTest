@@ -25,25 +25,18 @@ header {
 }
 
 header img {
-    width: 30%;
-    background-color: white;
+    width: 10%;
     border-radius: 10%;
     border: 1px solid #F2A900;
 }
 
-header ul{
+header nav{
+    display:flex;
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
-}
-
-header ul li{
     transition: 200ms;
     font-style: italic;
-}
-
-header ul li:hover{
-    transform: scale(1.2);
 }
 
 /*titulos*/
@@ -55,9 +48,10 @@ h1 {
 
 h2 {
     font-size: 22px;
-    color: #F2A900;
+    color: #4b3a29;
     font-weight: bold;
-
+    display: flex;
+    flex-direction: column;
 }
 
 /* Secciones */
@@ -66,12 +60,9 @@ section {
 }
 
 /* Listas */
-ul {
+nav {
     list-style: none;
     padding: 0;
-}
-
-li {
     margin-bottom: 10px;
 }
 
@@ -97,9 +88,9 @@ li {
 .resumenTexto:hover{
     background-color: #8c6B4A;
     transform: translateY(-3px);
-    -webkit-box-shadow: 20px 25px 0px -6px rgba(242, 169, 0);
-    -moz-box-shadow: 20px 25px 0px -6px rgba(242, 169, 0);
-    box-shadow: 20px 25px 0px -6px rgba(242, 169, 0);
+    -webkit-box-shadow: 20px 25px 0px -6px rgb(75, 58, 41);
+    -moz-box-shadow: 20px 25px 0px -6px rgb(75, 58, 41);
+    box-shadow: 20px 25px 0px -6px rgb(75, 58, 41);
 }
 
 .perfil img{
@@ -108,7 +99,7 @@ li {
 
 /* Personalización */
 .destacado {
-    color: #F2A900;
+    color: #4b3a29;
     font-weight: bold;
 }
 
@@ -117,6 +108,55 @@ li {
 a:hover {
     text-decoration: underline;
     color: #8c6B4A;
+}
+
+/* Estilos tarjetas instrumentos */
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 2rem 4rem;
+}
+
+.big-card{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: #a9957b;
+    padding: 3rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.small-card{
+    background-color: #a9957b;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.big-card-image-container{
+    width: 70%;
+    align-self: center;
+}
+
+.big-card-image-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.small-card-icon-container{
+    width: 35%;
+    align-self: flex-end;
+}
+
+.small-card-icon-container img{
+    width: 100%;
 }
 
 /* Estilos tarjetas */
@@ -159,7 +199,7 @@ a:hover {
 }
 
 .card-info p{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 200;
     text-align: justify;
 }
@@ -168,6 +208,8 @@ a:hover {
     width: 8rem;
     border: 1px solid white;
     background-color: black;
+    color: white;
+    display: flex;
     border-radius: 100vw;
     padding: 0.5rem 1rem;
     transition: 200ms;
@@ -217,4 +259,173 @@ footer {
 
 .links-container img:hover{
     transform: scale(1.1);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 1rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    header img{
+        width: 15%;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 2rem 2rem;
+    }
+
+    .big-card{
+        font-size: 10px;
+    }
+    
+    .small-card{
+        font-size: 8px;
+    }
+
+    .resumen{
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .perfil{
+        display: none;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container h1{
+        font-size: 12px;
+    }
+
+    .cards-container p{
+        font-size: 10px;
+    }
+
+    .cards-container button{
+        font-size: 10px;
+    }
+
+    footer{
+        font-size: 8px;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .links-containers{
+        gap: 1rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 800px) {
+    header{
+        padding: 1rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    header img{
+        width: 0.5rem;
+    }
+
+    header nav{
+        font-size: 10px;
+        gap: 1rem;
+    }
+
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 1.5rem;
+    }
+
+    .big-card{
+        font-size: 10px;
+    }
+    
+    .small-card{
+        font-size: 8px;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .cards-container h1{
+        font-size: 12px;
+    }
+
+    .cards-container p{
+        font-size: 10px;
+    }
+
+    .cards-container button{
+        font-size: 10px;
+    }
+
+    footer{
+        font-size: 8px;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .links-containers{
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1100px) {
+    header img{
+        width: 5.5rem;
+    }
+
+    .big-card{
+        font-size: 14px;
+    }
+    
+    .small-card{
+        font-size: 10px;
+    }
+
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-container h1{
+        font-size: 14px;
+    }
+
+    .cards-container p{
+        font-size: 12px;
+    }
+
+    .cards-container button{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 10px;
+        padding: 2rem;
+    }
+
+    .links-containers{
+        gap: 1.5rem;
+    }
 }
