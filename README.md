@@ -9,6 +9,11 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 **Captura de la clase 2: Comparaciones y decisiones en JavaScript**
 
 * https://imgur.com/a/TzuvkHn
+
+**Captura de la clase 3: Arreglos y Ciclos**
+
+* For: https://imgur.com/a/fTuAMzq
+* While: https://imgur.com/a/8LAzpCr 
   
 # Repositorio Github
 
