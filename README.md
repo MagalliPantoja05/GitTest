@@ -2,7 +2,7 @@
 
 Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 
-**Captura de la clase 1: Tipos de datos**
+**Captura de la clase 1: Tipos de  de JavaScript**
 
 * https://imgur.com/a/jHdEFdF 
   
@@ -10,10 +10,14 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 
 * https://imgur.com/a/TzuvkHn
 
-**Captura de la clase 3: Arreglos y Ciclos**
+**Captura de la clase 3: Arreglos y Ciclos en JavaScript**
 
 * For: https://imgur.com/a/fTuAMzq
 * While: https://imgur.com/a/8LAzpCr 
+
+**Captura de la clase 4: Funciones en JavaScript**
+
+* https://imgur.com/a/vP13Swz
   
 # Repositorio Github
 
