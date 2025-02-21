@@ -18,6 +18,10 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 **Captura de la clase 4: Funciones en JavaScript**
 
 * https://imgur.com/a/vP13Swz
+
+**Captura de la clase 5: Objetos en JavaScript**
+
+* https://imgur.com/a/1Di857S
   
 # Repositorio Github
 
