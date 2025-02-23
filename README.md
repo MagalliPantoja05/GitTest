@@ -21,7 +21,11 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 
 **Captura de la clase 5: Objetos en JavaScript**
 
-* https://imgur.com/a/1Di857S
+* https://imgur.com/a/1Di857S 
+
+**Captura de la clase 6: Introducción a DOM en JavaScript**
+
+* https://imgur.com/a/Ywt8LIo 
   
 # Repositorio Github
 
