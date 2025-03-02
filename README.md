@@ -26,6 +26,9 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 **Captura de la clase 6: Introducción a DOM en JavaScript**
 
 * https://imgur.com/a/Ywt8LIo 
+
+**Captura de la clase 7: DOM en JavaScript**
+* https://imgur.com/a/jGKDNrC
   
 # Repositorio Github
 
