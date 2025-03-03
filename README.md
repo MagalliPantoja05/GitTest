@@ -30,6 +30,9 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 **Captura de la clase 7: DOM en JavaScript**
 * https://imgur.com/a/jGKDNrC
   
+**Captura del Proyecto Final**
+* https://imgur.com/a/ZnjkdRn
+  
 # Repositorio Github
 
 Este repositorio contiene el código fuente, creado utilizando Javascript.

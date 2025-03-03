@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Foro</title>
+</head>
+<body>
+
+    <h1>Foro Escolar</h1>
+
+    <section class="activity-container">
+        <section class="description-container">
+            <h2>Comparte tus aportación respecto al Día de la Bandera</h2>
+            <p>La actividad consiste en nombrar datos curiosos de México</p>
+        </section>
+        <img id="banner" src="https://razafolklorica.com.mx/wp-content/uploads/2021/11/bandera-de-mexico-scaled.jpg" alt="Bandera de México">
+    </section>
+    
+    <section class="comment-container">
+        <h2>Comentarios</h2>
+        <p id="user-info"></p>
+        <textarea placeholder="Publica un comentario" id="comment"></textarea>
+        <button onclick="postComment()">Publicar</button>
+
+        <section id="comment-section"></section>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>
