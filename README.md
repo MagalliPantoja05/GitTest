@@ -1,4 +1,4 @@
-# Javascript
+# Javascript 
 
 Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 
@@ -33,13 +33,9 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 **Captura del Proyecto Final**
 * https://imgur.com/a/ZnjkdRn
   
-# Repositorio Github
+# Javascript - Lógica y Algoritmos
+**Captura de la Clase 1: Introducción a ECMAScript**
+* https://imgur.com/a/5JkqHUe 
 
-Este repositorio contiene el código fuente, creado utilizando Javascript.
-
-**Cómo desplegar:**
-
-1. Clona este repositorio.
-2. Abre el archivo en un navegador web.
-
-**Enlace a GitHub Pages:** https://magallipantoja05.github.io/GitTest/
+**Captura de la Clase 2: Estructura de Datos**
+* https://imgur.com/a/CCAYkwL 
