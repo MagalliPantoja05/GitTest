@@ -38,4 +38,7 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 * https://imgur.com/a/5JkqHUe 
 
 **Captura de la Clase 2: Estructura de Datos**
-* https://imgur.com/a/CCAYkwL 
+* https://imgur.com/a/CCAYkwL
+
+**Captura de la Clase 3: Métodos de Arreglos**
+* https://imgur.com/a/70odGpr
