@@ -42,3 +42,6 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 
 **Captura de la Clase 3: Métodos de Arreglos**
 * https://imgur.com/a/70odGpr
+
+**Captura de la Clase 4: Algoritmo de Los 2 Punteros**
+* https://imgur.com/a/A8uqVfT
