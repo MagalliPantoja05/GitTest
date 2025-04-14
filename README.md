@@ -45,3 +45,15 @@ Este es un proyecto de ejemplo para aprender a utilizar Javascript.
 
 **Captura de la Clase 4: Algoritmo de Los 2 Punteros**
 * https://imgur.com/a/A8uqVfT
+
+**Captura de la Clase 5: Algoritmo Sliding Window**
+* https://imgur.com/a/rBmbDgr
+
+**Captura de la Clase 6: Recursion y backtracking**
+* https://imgur.com/a/ApaebPb 
+
+**Captura de la Clase 7: Divide y Vencerás**
+* https://imgur.com/a/tmf6ebm
+
+**Captura de la Clase 8: Introducción al manejo de archivos con Node.js**
+* https://imgur.com/a/sUAvvFH
