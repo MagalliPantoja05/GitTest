@@ -18,7 +18,7 @@ function leerLibros(terminarLeer) {
 }
 
 // 2. Agregar libros: Permitir al usuario agregar un libro a la colección
-// - Guardar libros 
+// 2.1 Guardar libros 
 function guardarLibros(datosGuardar, terminarGuardar) {
     console.log("Simulando que estamos guardando los cambios...");
     setTimeout(() => {
@@ -28,7 +28,7 @@ function guardarLibros(datosGuardar, terminarGuardar) {
     }, 1000);
 }
 
-// - Mostrar libros
+// 2.2 Mostrar libros
 function mostrarInventario() {
     console.log("\n--- INVENTARIO ACTUAL DE LIBROS ---");
     leerLibros((datosLeidos) => {
@@ -45,7 +45,7 @@ function mostrarInventario() {
     });
 }
 
-// - Añadir libro nuevo
+// 2.3 Añadir libro nuevo
 function añadirNuevoLibro(titulo, autor, genero, disponible) {
     console.log(`\nIntentando añadir el libro: "${titulo}"...`);
     leerLibros((datosActuales) => {
