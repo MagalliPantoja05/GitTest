@@ -1,10 +1,6 @@
 const planetas = require('./planetas');
 
-<<<<<<< HEAD
 console.log('¡Construyendo el Registro Planetario!');
-=======
-console.log('--- ¡Reporte de Expedición Espacial! ---');
->>>>>>> baad297a89a917a5452c11d89770c493827c118b
 console.log('Estos son los planetas que hemos descubierto y registrado:');
 console.log('---------------------------------------');
 
