@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #cef4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.contenedor-principal {
+    background-color: #FFFFFF;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    color: #4682B4;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grupo-formulario {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #cde1f1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #4682B4;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4582B4;
+    transform: translateY(-2px);
+}
+
+.mensaje-error {
+    color: #d32f2f;
+    font-size: 0.9em;
+    margin-top: 4px;
+    min-height: 18px;
+    text-align: left;
+}
+
+input.error-input {
+    border-color: #d32f2f !important;
+}
+
+#generalErrors {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}

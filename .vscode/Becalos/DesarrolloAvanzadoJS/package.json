@@ -1,0 +1,15 @@
+{
+  "name": "desarrolloavanzadojs",
+  "version": "1.0.0",
+  "description": "Un registro de planetas para exploradores espaciales.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "explorar": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Magalli",
+  "license": "ISC",
+  "type": "commonjs"
+}
