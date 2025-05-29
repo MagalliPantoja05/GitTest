@@ -12,7 +12,6 @@ planetas.forEach(planeta => {
   console.log(`\n¡Planeta: ${planeta.nombre} descubierto!`);
   console.log(`  Descripción: ${planeta.descripcion}`);
   console.log(`  Descubierto en: ${planeta.descubiertoEn}`);
-<<<<<<< HEAD
   console.log(`  Su clasificación es: ${planeta.clasificacion}`);
   console.log(`  Masa: ${planeta.masa}`);
   console.log(`  Diámetro: ${planeta.diametro}`);
@@ -22,10 +21,3 @@ planetas.forEach(planeta => {
 });
 
 console.log('\n--- Fin del Registro ---');
-=======
-  console.log('---');
-});
-
-console.log('\n--- Fin del Reporte ---');
-console.log('¡Sigue explorando el cosmos!');
->>>>>>> baad297a89a917a5452c11d89770c493827c118b
