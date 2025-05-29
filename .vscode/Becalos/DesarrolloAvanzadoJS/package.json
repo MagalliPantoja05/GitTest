@@ -1,11 +1,7 @@
 {
   "name": "desarrolloavanzadojs",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "Un registro de planetas para exploradores espaciales.",
-=======
-  "description": "Un registro de planetas favoritos para exploradores espaciales.",
->>>>>>> baad297a89a917a5452c11d89770c493827c118b
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
