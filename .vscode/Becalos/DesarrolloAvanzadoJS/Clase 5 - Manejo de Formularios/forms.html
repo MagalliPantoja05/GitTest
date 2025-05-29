@@ -1,68 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de Eventos</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Eventos</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
-  <h1>Registro de Evento</h1>
-  <form id="registroEvento">
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" required>
+  <body>
+    <h1>Registro de Evento</h1>
+    <form id="registroEvento">
+      <h2>Tus Datos Personales</h2>
+      <div class="campo-grupo">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+        <p class="mensaje-error" id="error-nombre"></p>
+      </div>
 
-    <label for="correo">Correo electrónico:</label>
-    <input type="email" id="correo" name="correo" required>
+      <div class="campo-grupo">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required placeholder="ejemplo@dominio.com">
+        <p class="mensaje-error" id="error-correo"></p>
+      </div>
 
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" required>
+      <div class="campo-grupo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa tu teléfono (10 dígitos)">
+        <span class="formato">Formato: 5512345678</span>
+        <p class="mensaje-error" id="error-telefono"></p>
+      </div>
 
-    <label>Intereses:</label>
-    <label><input type="checkbox" name="intereses" value="tecnología"> Tecnología</label>
-    <label><input type="checkbox" name="intereses" value="negocios"> Negocios</label>
-    <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+      <h2>Tus Intereses y Horario</h2>
+      <div class="campo-grupo">
+        <label>Intereses:</label>
+        <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label>
+        <label><input type="checkbox" name="intereses" value="negocios"> Negocios</label>
+        <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+        <p class="mensaje-error" id="error-intereses"></p>
+      </div>
 
-    <label>Horario preferido:</label>
-    <label><input type="radio" name="horario" value="mañana" required> Mañana</label>
-    <label><input type="radio" name="horario" value="tarde"> Tarde</label>
-    <label><input type="radio" name="horario" value="noche"> Noche</label>
+      <div class="campo-grupo">
+        <label>Horario preferido:</label>
+        <label><input type="radio" name="horario" value="manana" required> Mañana</label>
+        <label><input type="radio" name="horario" value="tarde"> Tarde</label>
+        <label><input type="radio" name="horario" value="noche"> Noche</label>
+        <p class="mensaje-error" id="error-horario"></p>
+      </div>
 
-    <label for="fecha">Fecha del evento:</label>
-    <input type="date" id="fecha" name="fecha" required>
+      <h2>Detalles del Evento</h2>
+      <div class="campo-grupo">
+        <label for="fecha">Fecha del evento:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <p class="mensaje-error" id="error-fecha"></p>
+      </div>
 
-    <label for="hora">Hora preferida:</label>
-    <input type="time" id="hora" name="hora" required>
+      <div class="campo-grupo">
+        <label for="hora">Hora preferida:</label>
+        <input type="time" id="hora" name="hora" required>
+        <p class="mensaje-error" id="error-hora"></p>
+      </div>
 
-    <label for="archivo">Documento de identificación (opcional):</label>
-    <input type="file" id="archivo" name="archivo">
+      <div class="campo-grupo">
+        <label for="archivo">Documento de identificación (opcional):</label>
+        <input type="file" id="archivo" name="archivo">
+        <p class="mensaje-error" id="error-archivo"></p>
+      </div>
 
-    <button type="submit">Registrarse</button>
-  </form>
+      <button type="submit">¡Registrarme Ahora!</button>
+      <p id="mensaje-general-exito" class="mensaje-exito"></p>
+    </form>
 
-  <script>
-    document.getElementById('registroEvento').addEventListener('submit', function(event) {
-      event.preventDefault(); // Evita el envío automático del formulario
-
-      // Variables
-      const nombre = document.getElementById('nombre').value;
-      const correo = document.getElementById('correo').value;
-      const telefono = document.getElementById('telefono').value;
-      const intereses = document.querySelectorAll('input[name="intereses"]:checked');
-      const horario = document.querySelector('input[name="horario"]:checked');
-      const fecha = document.getElementById('fecha').value;
-      const hora = document.getElementById('hora').value;
-
-      // Validaciones básicas
-      if (!nombre || !correo || !telefono || intereses.length === 0 || !horario) {
-        alert('Por favor, completa todos los campos obligatorios.');
-        return;
-      }
-
-      // Si todo está bien
-      alert('Registro exitoso. ¡Gracias por registrarte!');
-    });
-  </script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -13,7 +13,7 @@ body {
 
 h1 {
     color: #4682B4;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 2.5em;
     text-align: center;
 }
@@ -21,6 +21,7 @@ h1 {
 .botones-contenedor {
     display: flex;
     gap: 15px;
+    margin-bottom: 30px;
 }
 
 button {
@@ -31,7 +32,7 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,17 +48,52 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     min-height: 100px;
-    width: 80%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 800px;
     text-align: center;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
     font-size: 1.1em;
     line-height: 1.6;
+    margin-top: 20px;
 }
 
-.error {
+.gato-info-tarjeta {
+    border: 1px solid #b3e0ff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9fcff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.gato-info-tarjeta img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid #6a9ac9;
+    margin-bottom: 15px;
+}
+
+.gato-info-tarjeta p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.mensaje-error {
     color: #D32F2F;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
