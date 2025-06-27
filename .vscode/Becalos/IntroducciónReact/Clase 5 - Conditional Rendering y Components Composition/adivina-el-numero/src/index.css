@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #cef4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: #4682B4;
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="number"] {
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.2em;
+  width: calc(100% - 30px);
+  max-width: 200px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #236aa4;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.restart-button {
+    background-color: #6c757d;
+}
+
+.restart-button:hover {
+    background-color: #5a6268;
+}
+
+.game-message {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 20px;
+  min-height: 30px;
+}
+
+.correct {
+  color: #28a745;
+}
+
+.hint {
+  color: #ffc107;
+}
